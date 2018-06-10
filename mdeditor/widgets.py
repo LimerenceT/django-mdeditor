@@ -73,7 +73,7 @@ class MDEditorWidget(forms.Textarea):
                 raise ImproperlyConfigured('CKEDITOR_CONFIGS setting must be a\
                         dictionary type.')
 
-    def render(self, name, value, attrs=None):
+    def render(self, name, value, attrs=None, renderer=None):
         if value is None:
             value = ''
 
